@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/sm_50"
+    android:orientation="horizontal" >
+
+    <cn.tvbingo.tv.launcher.widget.DateView
+        android:id="@+id/date_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="1970/01/01 \n星期一"
+        android:textColor="@color/white"
+        android:gravity="right"
+        android:textSize="@dimen/sm_20" />
+
+    <View
+        android:layout_width="@dimen/sm_2"
+        android:layout_height="@dimen/sm_40"
+        android:layout_marginLeft="@dimen/sm_10"
+        android:layout_marginTop="@dimen/sm_8"
+        android:background="@color/white" />
+
+    <cn.tvbingo.tv.launcher.widget.TimeView
+        android:id="@+id/time_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/sm_10"
+        android:text="08:00"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sm_42"
+        android:textStyle="bold" />
+
+    <cn.tvbingo.tv.launcher.widget.TimeAPMView
+        android:id="@+id/apm_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sm_10"
+        android:text="上午"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sm_20" />
+
+</LinearLayout>

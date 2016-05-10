@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_detils"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:descendantFocusability="beforeDescendants" >
+
+    <RelativeLayout
+        android:id="@+id/rl_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="beforeDescendants" >
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sm_44"
+            android:layout_marginTop="@dimen/sm_60"
+            android:focusable="false"
+            android:src="@drawable/logo" />
+
+        <include
+            android:layout_width="@dimen/sm_300"
+            android:layout_height="@dimen/sm_50"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/sm_44"
+            android:layout_marginTop="@dimen/sm_60"
+            layout="@layout/time_layout" />
+
+        <cn.tvbingo.tv.launcher.widget.SmoothHorizontalScrollView
+            android:id="@+id/mhorizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/iv_logo"
+            android:layout_marginTop="@dimen/sm_20"
+            android:descendantFocusability="beforeDescendants"
+            android:scrollbars="none" >
+
+            <cn.tvbingo.tv.launcher.widget.MainLayout
+                android:id="@+id/ll_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/sm_60" >
+
+                <cn.tvbingo.tv.launcher.widget.ReflectItemView
+                    android:layout_width="@dimen/sm_260"
+                    android:layout_height="@dimen/sm_445"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/sm_44"
+                    android:descendantFocusability="beforeDescendants" >
+
+                    <ImageView
+                        android:id="@+id/iv_home_0"
+                        android:layout_width="@dimen/sm_260"
+                        android:layout_height="@dimen/sm_354"
+                        android:focusable="true"
+                        android:scaleType="fitXY" />
+                </cn.tvbingo.tv.launcher.widget.ReflectItemView>
+
+                <cn.tvbingo.tv.launcher.widget.ReflectItemView
+                    android:layout_width="@dimen/sm_260"
+                    android:layout_height="@dimen/sm_445"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/sm_20"
+                    android:descendantFocusability="beforeDescendants" >
+
+                    <ImageView
+                        android:id="@+id/iv_home_1"
+                        android:layout_width="@dimen/sm_260"
+                        android:layout_height="@dimen/sm_354"
+                        android:focusable="true"
+                        android:scaleType="fitXY" />
+                </cn.tvbingo.tv.launcher.widget.ReflectItemView>
+
+                <cn.tvbingo.tv.launcher.widget.ReflectItemView
+                    android:layout_width="@dimen/sm_260"
+                    android:layout_height="@dimen/sm_445"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/sm_20"
+                    android:descendantFocusability="beforeDescendants" >
+
+                    <ImageView
+                        android:id="@+id/iv_home_2"
+                        android:layout_width="@dimen/sm_260"
+                        android:layout_height="@dimen/sm_354"
+                        android:focusable="true"
+                        android:nextFocusRight="@+id/iv_home_3"
+                        android:scaleType="fitXY" />
+                </cn.tvbingo.tv.launcher.widget.ReflectItemView>
+
+                <LinearLayout
+                    android:id="@+id/ll_home_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/sm_20"
+                    android:descendantFocusability="beforeDescendants"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/iv_home_3"
+                        android:layout_width="@dimen/sm_258"
+                        android:layout_height="@dimen/sm_170"
+                        android:focusable="true"
+                        android:scaleType="fitXY" />
+
+                    <cn.tvbingo.tv.launcher.widget.ReflectItemView
+                        android:layout_width="@dimen/sm_260"
+                        android:layout_height="@dimen/sm_260"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/sm_14"
+                        android:descendantFocusability="beforeDescendants" >
+
+                        <ImageView
+                            android:id="@+id/iv_home_4"
+                            android:layout_width="@dimen/sm_258"
+                            android:layout_height="@dimen/sm_170"
+                            android:focusable="true"
+                            android:scaleType="fitXY" />
+                    </cn.tvbingo.tv.launcher.widget.ReflectItemView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_home_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/sm_20"
+                    android:descendantFocusability="beforeDescendants"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/iv_home_5"
+                        android:layout_width="@dimen/sm_258"
+                        android:layout_height="@dimen/sm_170"
+                        android:focusable="true"
+                        android:scaleType="fitXY" />
+
+                    <cn.tvbingo.tv.launcher.widget.ReflectItemView
+                        android:layout_width="@dimen/sm_260"
+                        android:layout_height="@dimen/sm_260"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/sm_14"
+                        android:descendantFocusability="beforeDescendants" >
+
+                        <ImageView
+                            android:id="@+id/iv_home_6"
+                            android:layout_width="@dimen/sm_258"
+                            android:layout_height="@dimen/sm_170"
+                            android:focusable="true"
+                            android:scaleType="fitXY" />
+                    </cn.tvbingo.tv.launcher.widget.ReflectItemView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/sm_20"
+                    android:layout_marginRight="@dimen/sm_44"
+                    android:descendantFocusability="beforeDescendants"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/iv_home_7"
+                        android:layout_width="@dimen/sm_258"
+                        android:layout_height="@dimen/sm_170"
+                        android:focusable="true"
+                        android:scaleType="fitXY" />
+
+                    <cn.tvbingo.tv.launcher.widget.ReflectItemView
+                        android:layout_width="@dimen/sm_260"
+                        android:layout_height="@dimen/sm_260"
+                        android:layout_centerVertical="true"
+                        android:descendantFocusability="beforeDescendants" >
+
+                        <ImageView
+                            android:id="@+id/iv_home_8"
+                            android:layout_width="@dimen/sm_258"
+                            android:layout_height="@dimen/sm_170"
+                            android:layout_marginTop="@dimen/sm_14"
+                            android:focusable="true"
+                            android:scaleType="fitXY" />
+                    </cn.tvbingo.tv.launcher.widget.ReflectItemView>
+                </LinearLayout>
+            </cn.tvbingo.tv.launcher.widget.MainLayout>
+        </cn.tvbingo.tv.launcher.widget.SmoothHorizontalScrollView>
+    </RelativeLayout>
+
+    <cn.tvbingo.tv.launcher.widget.FlyBorderView
+        android:id="@+id/white_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</FrameLayout>
